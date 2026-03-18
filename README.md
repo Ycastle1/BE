@@ -75,3 +75,28 @@ ArchReactor is built with three main components:
 cd frontend
 npm install
 npm run dev
+
+
+# BE — ArchReactor Backend
+
+## 로컬 실행
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+→ http://localhost:8000 (API) / http://localhost:8000/docs (Swagger UI)
+
+## Docker 실행
+
+```bash
+cp .env.example .env
+docker-compose up --build
+```
+
+→ http://localhost:8000 (API) / http://localhost:8000/docs (Swagger UI)
+
+종료: `docker-compose down` (DB 데이터 유지) / `docker-compose down -v` (DB 데이터 삭제)

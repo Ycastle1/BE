@@ -1,0 +1,20 @@
+README.md
+project.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Environment
+.env
+
+# Docker
+postgres_data/
+
+# IDE
+.vscode/
+.idea/
