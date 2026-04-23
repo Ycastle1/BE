@@ -18,3 +18,13 @@ postgres_data/
 # IDE
 .vscode/
 .idea/
+
+# Claude Code
+.claude/
+
+# Alembic (migration scripts managed outside repo)
+alembic/
+alembic.ini
+
+# OS
+.DS_Store
